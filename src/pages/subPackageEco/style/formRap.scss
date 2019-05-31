@@ -1,0 +1,304 @@
+@charset 'utf-8';
+// 四项活动 表单-自定义 相关
+// 表单 标题部分
+.addTitleCom {
+    background-color: #FF4D4F;
+    padding: 22px 32px 0;
+    .atcTitle {
+        position: relative;
+        bottom: -26px;
+    }
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 36px 0 36px 40px;
+    font-size: 34px;
+    box-shadow: 0px 4px 12px 0px rgba(199, 199, 199, 0.5);
+}
+
+.atcList {
+    padding: 66px 32px 0;
+    .atcListItem {
+        margin-bottom: 36px;
+        padding: 0 0 0 40px;
+        .atcDeletCom {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 99;
+        }
+        .atcDeletIcon {
+            width: 34px;
+            height: 34px;
+            margin: 40px 22px 40px 40px;
+        }
+        .voteDeletIcon {
+            margin: 20px 20px 10px 30px;
+        }
+        .red,
+        .white {
+            font-size: 34px;
+            padding-right: 18px;
+            padding-top: 10px;
+        }
+        .red {
+            color: #FF4D4F;
+        }
+        .white {
+            color: #fff;
+        }
+        .listPad {
+            font-size: 34px;
+            padding: 0 40px 40px 0;
+        }
+    }
+    .atcAddView {
+        padding: 64px 0;
+        border: 1px dashed #999;
+        border-radius: 8px;
+        .atcAddIcon {
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+        }
+        .atcAddTxt {
+            font-size: 32px;
+            color: #333;
+        }
+    }
+}
+
+
+/* 配置 类别 层 --start*/
+
+.opacityCover {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.atcModalCover {
+    box-sizing: border-box;
+    width: 100%;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99999999;
+    .upView {
+        padding: 14px 30px 0 50px;
+        .atcModalTit {
+            padding: 38px 0 26px;
+            font-size: 32px;
+        }
+        .atcBloks {
+            box-sizing: border-box;
+            width: 31%;
+            text-align: center;
+            margin-right: 2.33%;
+            margin-bottom: 14px;
+            padding: 16px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            color: #333;
+            font-size: 30px;
+        }
+        .disabled {
+            background-color: #ccc;
+            color: #9D9D9D;
+        }
+        .botSpace {
+            padding-bottom: 32px;
+        }
+    }
+    // 弹层 - 取消按钮
+    .modWhiteBtn {
+        padding: 32px 0;
+        text-align: center;
+        font-size: 34px;
+        color: #333;
+        border-top: 14px solid #F5F5F5;
+    }
+}
+
+
+/* 配置 类别 层 --end*/
+
+
+/* list性质 表单 */
+
+.formList {
+    padding: 36px 30px;
+    border-bottom: 1px solid #eee;
+    .label {
+        font-size: 34px;
+        color: #333;
+    }
+    .labelInput {
+        width: 90%;
+    }
+    .grayDeletIcon {
+        width: 30px;
+        height: 30px;
+        margin: 30px;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 999;
+    }
+    .myTop {
+        top: 78px;
+    }
+    .label {
+        color: #333;
+        font-size: 34px;
+    }
+}
+
+
+/* 按钮 */
+
+.btnContain {
+    margin: 120px 30px 0;
+}
+
+.redBgBtn,
+.whiteBgBtn {
+    background-color: #FF4D4F;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    height: 94px;
+    line-height: 94px;
+    margin-top: 36px;
+}
+
+.whiteBgBtn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #FF4D4F;
+}
+
+.pageBotBtnCom {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 88888;
+}
+
+.pageBotBtn {
+    background-color: #FF4D4F;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    height: 94px;
+    line-height: 94px;
+    margin: 0 30px 20px;
+}
+
+.disableBtn {
+    opacity: 0.6;
+}
+
+.pageBotBtnComSpace {
+    height: 140px;
+}
+
+
+/* 带图片的列表UI 相关 */
+
+.listLeftImg {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+    background-color: #f1f1f1;
+}
+
+.listRightTxt {
+    width: 420px;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.listRightArea {
+    height: 150px;
+}
+
+.mindUpImgView {
+    width: 150px;
+    border: 1px dashed #c3c3c3;
+    text-align: center;
+    padding: 40px 0;
+    color: #999;
+    margin-right: 40px;
+}
+
+.deleteImg {
+    width: 30px;
+    height: 30px;
+    margin: 30px;
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    z-index: 99999;
+}
+
+
+/* 红包 相关样式 */
+
+.redBagPageCom {
+    border-top: 28px solid #F5F5F5;
+    .mindTxt {
+        padding: 36px 30px;
+        color: #333;
+        font-size: 28px;
+        .mindIcon {
+            width: 30px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 22px;
+            background-color: #FF4D4F;
+            margin-right: 10px;
+        }
+    }
+    .smTextsPad {
+        padding: 20px 30px;
+        background-color: #F5F5F5;
+    }
+    .smTexts {
+        color: #999;
+        font-size: 26px;
+        line-height: 1.4;
+    }
+    .label {
+        width: 500px;
+    }
+    .labelInput {
+        color: #333;
+        font-size: 34px;
+        text-align: right;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 100%;
+    }
+    .btnContain {
+        margin-top: 100px;
+    }
+}

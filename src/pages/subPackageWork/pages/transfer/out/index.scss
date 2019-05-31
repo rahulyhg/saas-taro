@@ -1,0 +1,31 @@
+.transfer-wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #f7f7f7;
+    font-family: 'PingFangSC-Regular';
+    .item {
+        padding: 24px 32px;
+        background: #fff;
+        .at-row {
+            align-items: center;
+            font-size: 34px;
+            padding: 24px 0;
+            Text {
+                color: #999;
+                font-size: 32px;
+            }
+            .icon {
+                color: #999
+            }
+        }
+        .label {
+            padding: 24px 0;
+            font-size: 34px;
+        }
+        .at-textarea {
+            border: none;
+            padding: 18px 0;
+        }
+    }
+}

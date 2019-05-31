@@ -1,0 +1,47 @@
+.list-wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    .head {
+        font-size: 28px;
+        text-align: center;
+        padding: 24px;
+    }
+    .year {
+        padding: 0 32px;
+        .title {
+            padding: 24px 0;
+            font-size: 32px;
+            .at-col:last-child {
+                color: #999;
+                text-align: right;
+                font-size: 26px;
+            }
+        }
+        .item {
+            .item-container {
+                padding: 32px 0;
+            }
+            .at-row {
+                align-items: center;
+            }
+            .icon {
+                font-size: 72px;
+                color: #FF4D4F;
+                margin-right: 24px;
+            }
+            .name {
+                font-size: 32px;
+            }
+            .info {
+                font-size: 26px;
+                padding-top: 8px;
+                color: #999
+            }
+            .money {
+                font-size: 34px;
+                color: #FF4D4F;
+            }
+        }
+    }
+}

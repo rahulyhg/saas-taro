@@ -1,0 +1,132 @@
+.activity-create {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 34px;
+    .activity-create-form {
+        background-color: #fff;
+        margin-top: 28rpx;
+        &-item {
+            margin-left: 32rpx;
+            padding: 24rpx 0;
+            width: calc(100% - 32rpx);
+            border-bottom: 1px solid #f6f6f6;
+            &-title {
+                color: #333;
+                font-size: 34rpx;
+                padding-left: 32rpx;
+                padding-top: 28rpx;
+                &-active {
+                    color: #FF4D4F;
+                    font-size: 24rpx;
+                    padding-left: 32rpx;
+                    padding-top: 28rpx;
+                }
+            }
+            &-date {
+                font-size: 28rpx;
+                padding-top: 16rpx;
+            }
+            &-img {
+                height: 90rpx;
+                width: 190rpx;
+                float: right;
+                padding-right: 36rpx;
+            }
+            &-content {
+                float: right;
+                padding-right: 16rpx;
+                color: #999;
+                font-size: 32px;
+                image {
+                    height: 52rpx;
+                    width: 52rpx;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    margin-right: 4rpx;
+                }
+            }
+        }
+        .next-btn {
+            padding: 90rpx 32rpx 32rpx;
+        }
+    }
+    .at-textarea {
+        padding: 24rpx 0rpx;
+        margin-left: 32rpx;
+        width: calc(100% - 32rpx);
+        border: 0;
+        border-bottom: 1rpx solid #F6F6F6;
+    }
+    .at-switch {
+        padding: 0 !important;
+        margin-right: 16px;
+        float: right;
+    }
+}
+
+.activity-item {
+    &-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 24rpx;
+    }
+    &-list-org {
+        color: #333;
+        font-size: 28px;
+        line-height: 98rpx;
+        margin-right: 24rpx;
+        padding: 12rpx 24rpx;
+        border-radius: 4rpx;
+        background-color: #E6E7EB;
+    }
+    &-plus {
+        display: block;
+        height: 92rpx;
+        width: 92rpx;
+        text-align: center;
+        line-height: 84rpx;
+        border: 1px solid #eee;
+        color: #ccc;
+        border-radius: 50%;
+        font-size: 72rpx;
+        float: left;
+    }
+}
+
+.activity-form-item {
+    padding: 24rpx 0;
+    padding-left: 32rpx;
+    color: #333;
+    font-size: 34rpx;
+    line-height: 56rpx;
+    border-bottom: 1rpx solid #eee;
+    background-color: #fff;
+    &-top-title {
+        color: #333;
+        font-size: 34rpx;
+        padding-left: 32rpx;
+        padding-top: 20rpx;
+    }
+    &-date {
+        color: #999;
+        font-size: 28rpx;
+    }
+    &-time {
+        color: #333;
+        font-size: 28rpx;
+    }
+    &-placeholder {
+        color: #999;
+        font-size: 32px;
+    }
+    image {
+        height: 52rpx;
+        max-width: 200rpx;
+    }
+}
+
+.at-input__title {
+    width: auto;
+}

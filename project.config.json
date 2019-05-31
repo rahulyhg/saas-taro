@@ -1,0 +1,62 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "saas-taro",
+	"description": "Saas2.0 前端",
+	"appid": "wx0b4b158dc0809488",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"nodeModules": true
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "my",
+					"pathName": "subPackageWork/pages/coordination/sendCoordination/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "deatil",
+					"pathName": "subPackageWork/pages/coordination/detail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "subPackageWork/pages/coordination/coordinationList/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

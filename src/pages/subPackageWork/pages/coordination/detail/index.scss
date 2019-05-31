@@ -1,0 +1,255 @@
+//横线颜色
+$color_line: #F5F5F5;
+
+.root-view {
+    width: 100%;
+    height: 100vh;
+
+    .list-root-scroll {
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .tab2-list-root {
+        .comment-list-item {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid $color_line;
+
+            .account-img {
+                margin-left: 32px;
+                margin-right: 20px;
+                size: 32px;
+            }
+
+            .name {
+                color: #333333;
+                font-size: 28px;
+            }
+
+            .time {
+                margin-right: 32px;
+                color: #999999;
+                font-size: 24px;
+            }
+
+            .content {
+                color: #333333;
+                font-size: 32px;
+                margin-right: 32px;
+            }
+
+            .triangle {
+                margin-left: 20px;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                border-right: 15px solid transparent;
+                border-bottom: 20px solid #F7F7F7;
+            }
+
+            .replay-list {
+                padding: 20px;
+                margin-right: 32px;
+                background-color: #F7F7F7;
+
+                .replay-name {
+                    font-size: 28px;
+                    color: #FB9605;
+                }
+
+                .replay-text {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    font-size: 28px;
+                    color: #333333;
+                }
+
+                .replay-content {
+                    margin-left: 5px;
+                    font-size: 28px;
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    .tab3-list-root {
+        .dynamic-list-item {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid $color_line;
+
+            .account-img {
+                margin-left: 32px;
+                margin-right: 20px;
+                size: 32px;
+            }
+
+            .name {
+                color: #333333;
+                font-size: 28px;
+            }
+
+            .time {
+                margin-right: 32px;
+                color: #999999;
+                font-size: 24px;
+            }
+
+            .state {
+                margin-top: 10px;
+                color: #FB9605;
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.space-view {
+    height: 100rpx;
+}
+
+.input_reply {
+    text-align: left;
+}
+
+
+//处理界面的css
+.parent-layout{
+    display: flex;
+    flex-flow: column;  
+}
+
+.at-textarea {
+    border-top: 0rpx!important;
+    border-bottom: 0rpx!important;
+    border-right: 0rpx !important;
+    border-left: 0rpx !important;  
+    padding: 32rpx !important; 
+}
+
+
+.deal-title{
+    color: rgba(51, 51, 51, 1);
+    font-size: 42px;
+    text-align: left;
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    margin-top: 20rpx;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.item-vertical{
+    display: flex;
+    flex-flow: column ;
+}
+
+.item-row{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.layout-flag-img{
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.item-pick-text{
+    color: rgba(51, 51, 51, 1);
+    font-size: 32rpx;
+}
+
+.item-pick-state-text{
+    color: rgba(153, 153, 153, 1);
+    font-size: 24rpx;
+}
+
+.item-date-state-text{
+    color: rgba(51, 51, 51, 1);
+    font-size: 28rpx;
+}
+
+.border-vertical{
+    width: 2rpx;
+    background: rgba(204, 204, 204, 1);
+    height: 60rpx;
+}
+
+.border{
+    width: 100%;
+    height: 1rpx;
+    transform: scaleY(0.5);
+    background-color: rgb(245,245,245);
+    margin-left: 32rpx ;
+    margin-right: 32rpx ;
+}
+
+.big-border{
+    width: 100%;
+    height: 30rpx;
+    background-color: rgb(245,245,245);
+}
+
+.item-title-text{
+    color: rgba(51, 51, 51, 1);
+    font-size: 34rpx;
+}
+
+.item-text{
+    font-size: 32rpx;
+}
+
+.item-text-black{
+    @extend .item-text;
+    color: rgb(51,51,51);
+}
+
+.item-text-gray{
+    @extend .item-text;
+    color: rgb(153,153,153);
+}
+
+.item-row-between{
+    @extend .item-row;
+    justify-content: space-between;
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    padding-left: 32rpx;
+    padding-right: 32rpx;
+}
+
+.item-row-right{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.button-del{
+    border-radius: 4px;
+    background-color: rgba(255, 227, 227, 1);
+    color: rgba(255, 87, 79, 1);
+    font-size: 36rpx;
+    flex: 1;
+    margin-left: 32rpx;
+    margin-right: 16rpx;
+    margin-bottom: 32rpx
+}
+
+.button-save{
+    border-radius: 4px;
+    background-color: rgba(255, 87, 79, 1);
+    color: white;
+    font-size: 36rpx;
+    flex: 1;
+    margin-right: 32rpx;
+    margin-left: 16rpx;
+    margin-bottom: 32rpx
+}

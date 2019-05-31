@@ -1,0 +1,54 @@
+.addFormItem-wrap {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.atcAddIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.atcAddTxt {
+    font-size: 32px;
+    color: #FF4D4F;
+    vertical-align: middle
+}
+
+.disabled {
+    color: #999;
+}
+
+.flex {
+    padding-top: 36px;
+    font-size: 28px;
+    .flex-item {
+        flex: 1;
+        text-align: left;
+    }
+}
+
+.icon {
+    font-size: 28px;
+    color: #999;
+}
+
+.icon-zhengque {
+    padding-right: 8px;
+}
+
+.icon-active {
+    color: #FF4D4F!important;
+}
+
+.addAction-wrap {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.form-item {
+    text {
+        color: #999;
+    }
+}

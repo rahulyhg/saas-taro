@@ -1,0 +1,48 @@
+.edit-wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    .head {
+        padding: 64px 32px;
+        .at-row {
+            align-items: center;
+            font-size: 28px;
+            .user-name {
+                font-size: 34px;
+            }
+            .org-name {
+                font-size: 26px;
+                color: #999999;
+                padding-top: 8px;
+            }
+            image {
+                width: 76px;
+                height: 76px;
+                border-radius: 50%;
+                margin-right: 36px;
+                vertical-align: middle;
+            }
+            text {
+                color: #FF4D4F;
+            }
+        }
+    }
+    .list {
+        font-size: 34px;
+        padding: 0 12px;
+        .item-content__info {
+            font-size: 34px;
+        }
+        .item-extra__info {
+            font-size: 32px;
+            color: #999;
+        }
+        .item-extra__icon-arrow {
+            font-size: 28px;
+        }
+    }
+    .btn {
+        padding: 0 32px;
+        margin-top: 90px;
+    }
+}

@@ -1,0 +1,98 @@
+//横线颜色
+$color_line: #F5F5F5;
+
+.root-view {
+    width: 100%;
+    height: 100vh;
+
+    .file-text {
+        padding-top: 20px;
+        font-size: 28px;
+        margin-left: 32px;
+    }
+
+    .image-text {
+        margin: 32px;
+        font-size: 28px;
+    }
+
+    .file-list-root {
+        .item {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid $color_line;
+
+            .item-image {
+                margin-left: 32px;
+                margin-right: 32px;
+                width: 60px;
+                height: 70px;
+            }
+
+            .right {
+                padding-right: 32px;
+            }
+
+            .title {
+                font-size: 34px;
+            }
+
+            .delete {
+                width: 30px;
+                height: 30px;
+            }
+
+            .name {
+                margin-top: 10px;
+                color: #999999;
+                font-size: 28px;
+            }
+
+            .time {
+                @extend .name;
+
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .image-list-root {
+
+        .image-view {
+            width: 320px;
+            height: 280px;
+        }
+
+        .list-item {
+            margin-top: 10px;
+            text-align: center;
+
+            .name {
+                margin-left: 32px;
+                margin-top: 10px;
+                color: #999999;
+                font-size: 28px;
+            }
+
+            .time {
+                @extend .name;
+                margin-right: 32px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .upload-btn{
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        color: #fff;
+        position: fixed;
+        bottom: 80px;
+        right: 32px; 
+    }
+
+    .delete{
+        color: red;
+    }
+}

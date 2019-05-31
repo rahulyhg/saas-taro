@@ -1,0 +1,19 @@
+/**
+ *
+ * @static 添加taro等自定义类型
+ * @interface Component
+ */
+import Taro from '@tarojs/taro'
+
+// 在Component上定义自定义方法类型
+declare module '@tarojs/taro' {
+  interface Component {
+    $api: any
+  }
+}
+
+//声明
+// eslint-disable-next-line
+declare let require: any
+// eslint-disable-next-line
+declare let dispach: any

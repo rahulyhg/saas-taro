@@ -1,0 +1,73 @@
+.transfer-wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #f7f7f7;
+    .at-search-bar {
+        background: #f7f7f7;
+        &::after {
+            border-bottom-width: 0px;
+        }
+        .at-search-bar__input-cnt {
+            background: #fff;
+        }
+    }
+    .at-tabs__header {
+        top: 84px;
+    }
+    .list {
+        padding-top: 84px;
+        .item {
+            margin: 32px;
+            padding: 32px;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 4px 12px 0px rgba(199, 199, 199, 0.5);
+            .at-row {
+                align-items: center;
+                padding-bottom: 32px;
+                margin-bottom: 24px;
+                image {
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 50%;
+                    margin-right: 24px;
+                    vertical-align: middle;
+                }
+                .user-name {
+                    font-size: 26px;
+                }
+                .at-col {
+                    text {
+                        font-size: 24px;
+                        color: #999;
+                        background: #fff;
+                        padding: 8px 12px 0 0;
+                        border-color: #ffffff;
+                    }
+                }
+                text {
+                    color: #FA5A55;
+                    font-size: 24px;
+                    background: #FEEEEE;
+                    padding: 8px 16px;
+                    border: solid 1px #FA5A55;
+                    border-radius: 4px;
+                }
+            }
+            .info {
+                text {
+                    font-size: 24px;
+                    color: #999;
+                }
+                .state {
+                    font-size: 22px;
+                    background: #FEEEEE;
+                    color: #FA5A55;
+                    margin-right: 24px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

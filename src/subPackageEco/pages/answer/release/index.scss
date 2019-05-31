@@ -1,0 +1,117 @@
+.release-wrap {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 34px;
+    font-family: 'PingFangSC-Regular';
+    background: #f5f5f5;
+    padding-bottom: 120px;
+    .head {
+        position: relative;
+        background-color: #FF4D4F;
+        background-size: 100% 50%;
+        height: 93px;
+        margin-bottom: 80px;
+        .title {
+            margin: 12px 32px 32px 32px;
+            padding: 36px 24px;
+            font-size: 34px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0px 4px 12px 0px rgba(199, 199, 199, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+    .container {
+        margin-top: 32px;
+        .add {
+            text-align: center;
+            font-size: 32px;
+            margin: 0 32px;
+            border-radius: 8px;
+            border: 1px dashed rgba(51, 51, 51, 1);
+            padding: 64px 0;
+        }
+        .icon {
+            color: #FF4D4F
+        }
+    }
+    .option-item {
+        margin: 32px;
+        padding: 24px;
+        font-size: 32px;
+        left: 32px;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 12px 0px rgba(199, 199, 199, 0.5);
+        .title {
+            padding-bottom: 36px;
+            font-family: 'PingFangSC-Medium';
+            text {
+                font-size: 26px;
+                border: solid 1px #FF4D4F;
+                color: #FF4D4F;
+                border-radius: 4px;
+                padding: 0 8px;
+                margin-right: 8px;
+            }
+        }
+        .info {
+            font-size: 28px;
+            font-family: 'PingFangSC-Regular';
+            padding-left: 12px;
+        }
+    }
+    .form-item {
+        padding: 0 32rpx;
+        input {
+            padding: 24px 0;
+        }
+        textarea {
+            padding: 32px 32px 32px 0;
+        }
+    }
+    .flex-start {
+        align-items: flex-start;
+    }
+    .add-action {
+        padding: 64px 32px;
+        font-size: 28px;
+        color: #999;
+        text {
+            padding-left: 8px
+        }
+    }
+    .action {
+        padding: 24px 32px;
+        font-size: 28px;
+        color: #999;
+        text {
+            padding-left: 8px
+        }
+    }
+    .footer {
+        position: fixed;
+        left: 32px;
+        right: 32px;
+        bottom: 24px;
+        .btn {
+            border-radius: 4px;
+            border-color: #fff;
+            color: #fff;
+            background-color: rgba(255, 77, 79, 0.6);
+        }
+    }
+    .flex-item {
+        flex: 1;
+    }
+    .btn-save {
+        margin: 32px;
+    }
+    .btn-cancel {
+        margin: 32px;
+        background: #fff;
+        color: #FF4D4F;
+    }
+}

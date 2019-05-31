@@ -1,0 +1,72 @@
+.special-wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: #F9FAFC;
+    .head {
+        font-size: 28px;
+        color: #999999;
+        background: #fff;
+        padding: 24px 32px 32px 32px;
+    }
+    .container {
+        padding: 0 32rpx;
+        background: #fff;
+        .money {
+            font-size: 32px;
+            font-family: 'PingFangSC-Medium';
+            .title {
+                padding-top: 32px;
+            }
+            .at-row {
+                padding: 32px 0;
+                align-items: center;
+                font-size: 52px;
+                .at-col {
+                    font-size: 60px;
+                    text-align: right;
+                    input {
+                        text-align: left;
+                        font-size: 90px;
+                    }
+                }
+            }
+        }
+        .info {
+            font-size: 28px;
+            color: #999999;
+            font-family: 'PingFangSC-Regular';
+            .at-row {
+                padding: 24px 0;
+                align-items: center;
+                .at-col {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .btn {
+        padding: 0 32px;
+        margin-top: 90px;
+    }
+    .remark {
+        margin-top: 24px;
+        .at-input {
+            text-align: right;
+            margin-left: 0;
+            padding-left: 32px;
+        }
+    }
+    .footer {
+        position: absolute;
+        font-size: 24px;
+        left: 0;
+        right: 0;
+        bottom: 32px;
+        text-align: center;
+        color: #999;
+        .diver {
+            padding: 0 48px;
+        }
+    }
+}

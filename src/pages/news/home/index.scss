@@ -1,0 +1,237 @@
+.newsPage {
+	min-height: 100vh;
+	.tabSpace{
+		height: 100px;
+		background-color: #fff;
+	}
+	.tabSpace_big{
+		height: 180px;
+		background-color: #fff;
+	}
+	/* 选择组织 */
+	.checkOrgCom{
+		background-color: #fff;
+		box-sizing: border-box;
+		width: 100%;
+		padding: 30px 30px 10px;
+		position: fixed;
+		top: 70px;
+		z-index: 77777;
+		.pickerLogo{
+			width: 36px;
+			height: 36px;
+			margin-right: 20px;
+		}
+		.c_picker{
+			font-size: 40px;
+		}
+		.arrDown{
+			width: 24px;
+			height: 14px;
+			margin-left: 20px;
+		}
+	}
+	.optBg{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 170px;
+		z-index: 9999900;
+		background-color: #000;
+		opacity: 0.6;
+	}
+	.orgList{
+		background-color: #fff;
+		padding: 30px 0 40px;
+		width: 100%;
+		min-height: 100px;
+		max-height: 700px;
+		overflow: auto;
+		position: fixed;
+		top: 170px;
+		box-shadow: 0px 8px 10px 0px rgba(153, 153, 153, 0.24);
+		z-index: 9999999;
+		.orgBlock{
+			width: 50%;
+			.checkBlock{
+				text-align: center;
+				color: #333;
+				font-size: 30px;
+				margin: 0 auto;
+				position: relative;
+				width: 331px;
+				height: 72px;
+				line-height: 72px;
+				background-color: #f5f5f5;
+				border: 1px solid #f5f5f5;
+				margin-bottom: 28px;
+				.checkedIcon{
+					width: 40px;
+					height: 32px;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					z-index: 8888888;
+				}
+			}
+			.v-check{
+				.checkedIcon{
+					display: none;
+				}
+			}
+			.v-checked{
+				background-color: #feecec;
+				border: 1px solid #ff8322;
+				.checkedIcon{
+					display: block;
+				}
+			}
+		}
+	}
+	.noOrg{
+		padding: 60px 30px 0;
+		text-align: center;
+		color: #aaa;
+		font-size: 30px;
+	}
+	/* 轮播图样式 */ 
+	.newsSwiper{
+		height: 380px;
+		.newsSwiperView{
+			position: relative;
+			height: 380px;
+			.news-s-img{
+				width: 100%;
+				height: 380px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 700;
+			}
+			.news-s-bg-img{
+				width: 100%;
+				height: 380px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 800;
+			}
+			.news-s-text{
+				width: 90%;
+				height: auto;
+				position: absolute;
+				left: 5%;
+				bottom: 40px;
+				color: #fff;
+				font-size: 30px;
+				line-height: 1.4;
+				z-index: 900;
+			}
+		}
+	}
+	/* 列表样式 */ 
+	.sysLists{
+		padding: 20px 0;
+		margin: 0 30px;
+		border-bottom: 1px solid #eee;
+		.one-col-img{
+			width: 220px;
+			height: 160px;
+		}
+		.one-spect-img{
+			width: 100%;
+			height: 360px;
+			margin: 16px auto 10px;
+		}
+		.sysListsTit{
+			width: auto;
+			font-size: 36px;
+			.hotIcon{
+				display: inline-block;
+				background-color: #ff0000;
+				color: #fff;
+				font-size: 20px;
+				width: 30px;
+				text-align: center;
+				height: 30px;
+				line-height: 30px;
+				margin-right: 4px;
+				position: relative;
+				bottom: 10px;
+			}
+		}
+		.spectIcon{
+			width: 88px;
+			height: 60px;
+			position: absolute;
+			right: 20px;
+			top: 40px;
+			z-index: 6666;
+		}
+		.playIcon{
+			width: 80px;
+			height: 80px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -40px;
+			margin-top: -40px;
+			z-index: 6666;
+		}
+		.minHeight{
+			min-height: 126px;
+		}
+		.myWidth{
+			width: 460px;
+		}
+		.readNum{
+			margin-left: 40px;
+		}
+		.moreImg{
+			padding-top: 10px;
+		}
+		.two-col-img-a{
+			width: 35%;
+			height: 160px;
+			margin-bottom: 10px;
+		}
+		.two-col-img-b{
+			width: 64%;
+			height: 160px;
+			margin-bottom: 14px;
+		}
+		.two-col-img-c{
+			width: 32.6%;
+			height: 160px;
+			margin-bottom: 14px;
+		}
+		.moreCover{
+			position: absolute;
+			width: 32.6%; 
+			height: 160px;
+			margin-bottom: 14px;
+			z-index: 6666;
+			right: 0;
+			top: 10px;
+			.grayCover{
+				width: 100%; 
+				height: 160px;
+				background-color: #000;
+				opacity: 0.3;
+			}
+			.txt{
+				width: 100%;
+				text-align: center;
+				color: #fff;
+				font-size: 30px;
+				position: absolute;
+				top: 70px;
+				left: 0;
+			}
+		}
+	}
+	/* 暂无数据 覆盖 */
+	.nodata{
+		padding-top: 260px;
+	}
+}

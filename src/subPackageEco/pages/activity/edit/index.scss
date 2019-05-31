@@ -1,0 +1,101 @@
+.activity-edit {
+    width: 100%;
+    color: #333;
+    font-size: 34px;
+    &-form {
+        background-color: #fff;
+        margin-top: 28rpx;
+        &-item {
+            margin-left: 32rpx;
+            padding: 24rpx 0;
+            width: calc(100% - 32rpx);
+            border-bottom: 1px solid #f6f6f6;
+            &-title {
+                color: #999;
+                font-size: 32rpx;
+                padding-left: 32rpx;
+                padding-top: 28rpx;
+            }
+            &-date {
+                font-size: 28rpx;
+                padding-top: 16rpx;
+            }
+            &-img {
+                height: 90rpx;
+                width: 190rpx;
+                float: right;
+                padding-right: 36rpx;
+            }
+            &-content {
+                float: right;
+                padding-right: 16rpx;
+                color: #999;
+                font-size: 32px;
+                image {
+                    height: 52rpx;
+                    width: 52rpx;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    margin-right: 4rpx;
+                }
+            }
+        }
+        &-btn {
+            padding: 90rpx 32rpx 32rpx;
+            &-del {
+                margin-top: 36rpx;
+                border: 1rpx solid #ccc;
+            }
+        }
+    }
+    .activity-result {
+        margin-top: 84px;
+        padding: 32px;
+        &-item {
+            padding: 24px 0;
+            &-head {
+                align-items: center;
+            }
+            image {
+                width: 94px;
+                height: 94px;
+                margin-right: 24px;
+                border-radius: 100%;
+            }
+            &-head-info-username {
+                font-size: 32px;
+            }
+            &-head-info-time-right {
+                color: #999999;
+                font-size: 28px;
+            }
+            &-head-info-detail {
+                color: #999999;
+                font-size: 28px;
+                padding-top: 16px;
+                align-items: center;
+            }
+        }
+    }
+    .at-textarea {
+        padding: 24rpx 0rpx;
+        margin-left: 32rpx;
+        width: calc(100% - 32rpx);
+        border: 0;
+        border-bottom: 1rpx solid #F6F6F6;
+    }
+    .at-switch {
+        padding: 0 !important;
+        margin-right: 16px;
+        float: right;
+    }
+    .activity-result-item-imgs-item {
+        box-sizing: border-box;
+    }
+    .at-tabs .at-tabs__header {
+        border-bottom: 1px solid #f3f3f3;
+    }
+    .activity-edit-form-btn-del {
+        color: #FF4D4F;
+    }
+}

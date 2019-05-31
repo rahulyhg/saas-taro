@@ -1,0 +1,30 @@
+.addFormItem-wrap {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.atcAddIcon {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.atcAddTxt {
+    font-size: 32px;
+    color: #FF4D4F;
+    vertical-align: middle
+}
+
+.disabled {
+    color: #999;
+}
+
+.flex {
+    padding: 36px 0px;
+    font-size: 28px;
+    .flex-item {
+        flex: 1;
+        text-align: center;
+    }
+}

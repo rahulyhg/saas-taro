@@ -1,0 +1,218 @@
+
+.meetManageDetail-wrap {
+    width: 100%;
+    height: 100vh;
+    // 顶部黄条条
+    .isVideoMeet{
+        box-sizing: border-box;
+        background-color: #FEFCEB;
+        width: 100%;
+        height: 74px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999999;
+        .icon{
+            width: 36px;
+            height: 36px;
+            margin-right: 20px;
+            margin-left: 30px;
+        }
+        .meetName{
+            font-size: 28px;
+            color: #F96A0E;
+            width: 440px;
+        }
+        .btn{
+            color: #F96A0E;
+            font-size: 24px;
+            padding: 4px 8px;
+            border: 1px solid #F96A0E;
+            border-radius: 4px;
+            margin-right: 30px;
+        }
+    }
+    // tab - 0
+    .at-tabs__item{
+        width: 33.33%;
+        box-sizing: border-box;
+        border-bottom: 2px solid #f5f5f5;
+        border-top: 28px solid #f5f5f5;
+    }
+    // 自定义样式
+    .md-list{
+        margin: 0 30px;
+        padding: 30px 0;
+        border-top: 1px solid #eee;
+        color: #333;
+        .smallLabel{
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        .bigLabel{
+            font-size: 34px;
+        }
+        .gray{
+            color: #999;
+        }
+        .arrR{
+            width: 30px;
+            height: 30px;
+        }
+        .twoCol{
+            width: 50%;
+        }
+        .borderL{
+            padding-left: 30px;
+            border-left: 1px solid #f5f5f5;
+        }
+        .selectAddr{
+            padding-top: 20px;
+            font-size: 32px;
+        }
+        .mdInput{
+            width: 100%;
+            color: #333;
+            font-size: 32px;
+            height: 56px;
+            line-height: 56px;
+            .re-input{
+                padding: 20px 0 0 40px;
+                font-size: 32px;
+            }
+        }
+    }
+    .grayLineSpace{
+        border-top: 28px solid #f5f5f5;
+    }
+    // 按钮
+    .btnCom{
+        padding-top: 80px;
+        .deletBtn,.saveBtn{
+            width: 335px;
+            height: 88px;
+            line-height: 88px;
+            border-radius: 4px;
+            font-size: 36px;
+            text-align: center;
+        }
+        .deletBtn{
+            background-color: #ffe9e9;
+            color: #FF4D4F;
+        }
+        .saveBtn{
+            background-color: #FF4D4F;
+            color: #fff;
+        }
+    }
+    .bigBtnCom{
+        .saveBtn{
+            width: 100%;
+        }
+    }
+    // tab - 1
+    .canvasCom{
+        padding: 0 30px;
+        color: #333;
+        .ca-title{
+            padding: 30px 0;
+            font-size: 40px;
+            line-height: 1.4;
+        }
+        .timeAndOther{
+            padding-bottom: 30px;
+        }
+        .canvas{
+            display: block;
+            width: 200Px;
+            height: 200Px;
+            margin: 30px auto;
+        }
+        .s-title{
+            text-align: center;
+            font-size: 30px;
+            padding: 0 0 40px;
+        }
+        .ca-twobtn{
+            margin: 30px auto 60px;
+            width: 200Px;
+            font-size: 30px;
+            color: #999;
+        }
+        .openSign{
+            width: 200Px;
+            height: 70px;
+            line-height: 70px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 30px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 80px;
+        }
+        .arrR{
+            width: 30px;
+            height: 30px;
+        }
+        // 人员列表
+        .personList{
+            padding: 20px 0;
+            margin: 0 20px;
+            border-top: 1px solid #eee;
+        }
+        .personList:last-child{
+            border-bottom: 1px solid #eee;
+        }
+    }
+    // tab - 2 
+    .meetJY{
+        color: #333;
+        .meetPersonInput{
+            width: 400px;
+            text-align: right;
+            font-size: 32px;
+        }
+        .meetPersonDetail{
+            padding-top: 20px;
+            color: #999;
+            font-size: 24px;
+        }
+        .arrR{
+            width: 30px;
+            height: 30px;
+        }
+        .bordeB{
+            border-bottom: 1px solid #eee;
+        }
+        .upload-list{
+            margin-right: 0;
+            border: none;
+            .upload{
+                width: 34px;
+                height: 30px;
+                margin: 0 30px;
+            }
+            .imgsCom{
+                padding-top: 10px;
+                .imgs{
+                    position: relative;
+                    width: 116px;
+                    margin-top: 20px;
+                    .deletImg{
+                        width: 30px;
+                        height: 30px;
+                        margin: 10px;
+                        position: absolute;
+                        right: 4px;
+                        top: -20px;
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+.haveTopAdv .at-tabs__item{
+    border-top: 74px solid #f5f5f5;
+}
