@@ -1,4 +1,5 @@
-import Taro from '@tarojs/taro';
+// import Taro from '@tarojs/taro';
+import * as indexApi from './service';
 
 export default {
   namespace: 'index',
@@ -9,6 +10,22 @@ export default {
   },
 
   effects: {
+    * getLists({ payload }, { select, call, put }) {
+      const { key, v } = yield select(state => state.index)
+      const { error, result } = yield call(indexApi.getLists, {
+        key,
+        v,
+        ...payload
+      })
+      if (!error) {
+        yield put({
+          type: 'updateState',
+          payload: {
+            data: result
+          }
+        })
+      }
+    }
   },
 
   reducers: {

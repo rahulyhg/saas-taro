@@ -1,6 +1,4 @@
-// import loginService from '../service/loginService'
-import userAndOrgUtilService from '../service/userAndOrgUtilService'
-
+import index from '../pages/index/config' // index接口
 /** 
  * 请求的公共参数
  */
@@ -10,6 +8,6 @@ export const commonParame = {}
  * 请求映射文件
  */
 export const requestConfig = {
-  // ...loginService,
-  ...userAndOrgUtilService,
+  loginUrl: '/api/user/wechat-auth', // 微信登录接口
+  ...index
 }
