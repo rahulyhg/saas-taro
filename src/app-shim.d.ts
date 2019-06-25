@@ -1,10 +1,9 @@
 /**
  *
- * @author asheng
  * @static 添加taro等自定义类型
  * @interface Component
  */
-import Taro, { Component } from '@tarojs/taro'
+import Taro from '@tarojs/taro'
 
 // 在Component上定义自定义方法类型
 declare module '@tarojs/taro' {
@@ -14,5 +13,7 @@ declare module '@tarojs/taro' {
 }
 
 //声明
-declare var require: any
-declare var dispach: any
+// eslint-disable-next-line
+declare let require: any
+// eslint-disable-next-line
+declare let dispach: any

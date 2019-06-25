@@ -1,0 +1,342 @@
+@charset 'utf-8';
+// gaoshuzhen 2019年5月29日
+.examList{
+    // 考试列表
+    .listcom{
+        padding: 0 30px;
+        .list{
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+            .cameraIcon{
+                width: 36px;
+                height: 22px;
+                margin-right: 10px;
+            }
+            .title{
+                font-size: 34px;
+                line-height: 1.4;
+            }
+            .subtit{
+                padding-top: 24px;
+            }
+        }
+        
+    }
+    // 覆盖框架UI
+    .at-tabs__item{
+        width: 33.33%;
+        box-sizing: border-box;
+    }
+}
+
+// card 样式
+.cardView{
+    .topRedBg{
+        height: 124px;
+        background-color: #FF4D4F;
+    }
+    .carCom{
+        padding: 20px 40px 40px;
+        position: relative;
+        top: -74px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin: 0 32px;
+        box-shadow: 1px 1px 20px 1px #e4e4e4;
+        .topTopicBtn{
+            color: #fff;
+            font-size: 32px;
+            width: 270px;
+            text-align: center;
+            height: 92px;
+            line-height: 92px;
+            position: absolute;
+            left: 50%;
+            margin-left: -135px;
+            top: -46px;
+            border-radius: 46px;
+            background: -webkit-linear-gradient(#ff8686, #ff4e4e);
+            background: -o-linear-gradient(#ff8686, #ff4e4e);
+            background: -moz-linear-gradient(#ff8686, #ff4e4e);
+            background: linear-gradient(#ff8686, #ff4e4e);
+            box-shadow: 1px 8px 4px 0px #ffbebe;
+            z-index: 88;
+        }
+        .topicCardBtn{
+            padding: 8px 14px;
+            color: #FF4D4F;
+            border-radius: 4px;
+            font-size: 24px;
+            border: 1px solid #FF4D4F;
+            .redArrD{
+                width: 18px;
+                height: 10px;
+                margin-left: 6px;
+            }
+        }
+
+        
+    }
+
+    // 按钮
+    .grayBtn{
+        color: #fff;
+        font-size: 36px;
+        text-align: center;
+        height: 94px;
+        line-height: 94px;
+        background-color: #CCC;
+        border-radius: 4px;
+        margin-top: 40px;
+    }
+    .redBtn{
+        color: #fff;
+        font-size: 36px;
+        text-align: center;
+        height: 94px;
+        line-height: 94px;
+        background-color: #FF4D4F;
+        border-radius: 4px;
+        margin-top: 40px;
+    }
+    // 文本样式
+    .examTitle{
+        color: #333;
+        font-size: 34px;
+        line-height: 1.4;
+        padding: 20px 0 0;
+    }
+    .examSubTitle{
+        color: #999;
+        font-size: 30px;
+        line-height: 1.4;
+        padding: 20px 0;
+    }
+    // 考试内容设置
+    .examContSet{
+        border-top: 1px solid #ddd;
+        padding: 20px 0 100px;
+    }
+    .padT36{
+        padding-top: 36px;
+    }
+    .s_blok{
+        width: 50%;
+        .tit{
+            padding: 20px 0;
+            color: #aaa;
+            font-size: 30px;
+            padding-right: 10px;
+        }
+        .time{
+            color: #333;
+            font-size: 30px;
+        }
+    }
+
+    // 题目所在的card
+    .topicCard{
+        height: calc(100% - 90px);
+        box-sizing: border-box;
+        // 考试题目
+        .exam{
+            max-height: calc(100% - 160px);
+            box-sizing: border-box;
+            overflow: auto;
+            position: relative;
+            // 考试题目
+            .examTopicTitle{
+                color: #333;
+                font-size: 36px;
+                padding: 30px 0 0;
+                .examType{
+                    padding: 4px 10px;
+                    border: 1px solid #ff4d4f;
+                    font-size: 24px;
+                    color: #ff4d4f;
+                    margin-right: 10px;
+                    position: relative;
+                    top: -4px;
+                    line-height: 1;
+                }
+            }
+            // 考试选项 单选
+            .miniCard{
+                padding: 20px 0 20px 30px;
+                background-color: #F9F9F9;
+                border: 1px solid #F9F9F9;
+                margin-top: 30px;
+                .itemText{
+                    width: 460px;
+                    font-size: 32px;
+                    line-height: 1.2;
+                    color: #333;
+                }
+            }
+            .miniCard.cur{
+                background-color: #fff5f5;
+                border: 1px solid #ffb4b5;
+                .itemText{
+                    color: #FF4D4F;
+                }
+            }
+            // 填空
+            .blankValue{
+                padding: 26px 30px;
+                border: 1px solid #ddd;
+                font-size: 32px;
+                border-radius: 4px;
+                margin: 36px 0 0;
+            }
+        }
+        // 每一题的答案
+        .resultCom{
+            margin: 50px 0 30px;
+            padding: 20px 0;
+            border-top: 1px solid #E0E0E0;
+            border-bottom: 1px solid #E0E0E0;
+            .twoRes{
+                width: 50%;
+                text-align: center;
+                .title{
+                    color: #333;
+                    font-size: 32px;
+                    padding-bottom: 20px;
+                }
+            }
+            .borderL{
+                border-left: 1px solid #E0E0E0;
+            }
+            .borderR{
+                border-right: 1px solid #E0E0E0;
+            }
+            .green{
+                color: #37dbc2;
+                line-height: 1.5;
+                word-wrap: break-word;
+                padding: 0 20px;
+            }
+            .red{
+                color: #FF4D4F;
+                line-height: 1.5;
+                word-wrap: break-word;
+                padding: 0 20px;
+            }
+        }
+        .twoBtn{
+            width: 100%;
+            padding: 40px 40px 0;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            z-index: 88;
+            view{
+                width: 290px;
+                height: 94px;
+                line-height: 94px;
+                color: #ff4d4f;
+                font-size: 36px;
+                text-align: center;
+                border-radius: 4px;
+                border: 1px solid #ff4d4f;
+            }
+            .disabled{
+                background-color: #ccc;
+                color: #fff;
+                border-color: #ccc;
+            }
+        }
+        .oneBtn{
+            view{
+                background-color: #FF4D4F;
+                width: 100%;
+                color: #fff;
+            }
+        }
+    }
+
+
+    // 弹窗
+    .topicModal{
+        .opacityCover{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #000;
+            opacity: 0.7;
+            z-index: 888;
+        }
+        .modalCover{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 889;
+            .whiteBgView{
+                max-height: 860px;
+                min-height: 300px;
+                width: 680px;
+                border-radius: 10px;
+                background-color: #fff;
+                position: relative;
+                z-index: 892;
+                .title{
+                    padding: 30px 0;
+                    text-align: center;
+                    color: #333;
+                    font-size: 34px;
+                }
+                .indexList{
+                    padding: 20px 0 30px 30px;
+                    max-height: 610px;
+                    overflow: auto;
+                    .indexView{
+                        width: 60px;
+                        text-align: center;
+                        height: 60px;
+                        line-height: 60px;
+                        border-radius: 4px;
+                        font-size: 24px;
+                        margin: 0 32px 32px 0;
+                        border: 1px dashed #ccc;
+                        color: #999;
+                        background-color: #f8f8f8;
+                    }
+                    .cur{
+                        background-color: rgba(255, 77, 79, 0.06);
+                        border: 1px solid #ff4d4f;
+                    }
+                    .isNow{
+                        background-color: #f36d6f;
+                        border: 1px solid #ff4d4f;
+                        color: #fff;
+                    }
+                }
+                .cancelBtn{
+                    height: 110px;
+                    line-height: 110px;
+                    text-align: center;
+                    border-top: 1px solid #eee;
+                    color: #ff4d4f;
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    
+}
+// 全局样式
+.at-tabs .at-tabs__header {
+    background-color: #fff;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 99999;
+}
+.at-tabs-pane--active{
+    vertical-align: top !important;
+}

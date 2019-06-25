@@ -1,0 +1,100 @@
+.user {
+    background-image: url('http://saas-2-min-pro.oss-cn-hangzhou.aliyuncs.com/images/user/userTopBg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding: 32rpx;
+
+    &-info {
+        height: 300rpx;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        color: #fff;
+        justify-content: space-between;
+
+        &-main {
+            line-height: 72rpx;
+        }
+
+        &-name {
+            font-size: 34rpx;
+            padding-right: 40rpx;
+        }
+
+        &-date {
+            font-size: 24rpx;
+        }
+
+        &-org {
+            font-size: 28rpx;
+        }
+
+        &-icon {
+            line-height: 120rpx;
+            margin-left: auto;
+        }
+    }
+
+    &-action {
+        background-color: #fff;
+        border-radius: 8rpx;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 28rpx;
+        font-size: 24rpx;
+        box-shadow: 0px 2px 10px 0px rgba(153, 153, 153, 0.2);
+        margin-top: -140rpx;
+
+        image {
+            width: 76rpx;
+            height: 76rpx;
+            padding-bottom: 8rpx;
+        }
+
+        &-item {
+            flex: 0 0 25%;
+            text-align: center;
+        }
+    }
+
+    &-menuList {
+        padding-top: 28rpx;
+
+        &-item {
+            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            .list-icon {
+                padding: 28rpx 0;
+                margin-right: 32rpx;
+            }
+
+            .list-main {
+                padding: 28rpx 0;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                border-bottom: 1rpx solid #f5f5f5;
+                line-height: 48rpx;
+                justify-content: space-between;
+                width: 100%;
+
+                &-title {
+                    font-size: 34rpx;
+                    color: #333;
+                }
+
+                &-content {
+                    font-size: 30rpx;
+                    color: #ccc;
+                    margin-left: auto;
+                    padding-right: 20rpx;
+                }
+            }
+        }
+    }
+}

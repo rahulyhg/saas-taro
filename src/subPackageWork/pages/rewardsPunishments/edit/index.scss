@@ -1,0 +1,67 @@
+.rewardsPunishmentsEdit {
+    .formItems {
+
+        .formItem {
+            display: flex;
+            align-items: center;
+            padding: 28rpx 32rpx;
+
+            .at-image-picker {
+                width: 150rpx;
+                height: 150rpx;
+            }
+
+            .label {
+                width: 140rpx;
+                font-size: 34rpx;
+            }
+            
+            .content {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                color: rgba(153, 153, 153, 1);
+                font-size: 32rpx;
+                line-height: 36rpx;
+
+                .at-textarea {
+                    border: 0;
+                    padding: 0;
+                }
+
+                .icon {
+                    font-size: 34rpx !important;
+                    color: rgba(153, 153, 153, 1) !important;
+                }
+            }
+
+            &.line {
+                border-bottom: 1rpx solid rgba(238, 238, 238, 1);
+            }
+            &.vertical {
+                display: block;
+
+                .label,
+                .content {
+                    width: 100%;
+                }
+                .content {
+                    margin-top: 16rpx;
+                    display: block;
+                }
+            }
+
+            .checkUserImgDom {
+                margin-right: 12rpx;
+
+                image {
+                    width: 52rpx;
+                    height: 52rpx;
+                    border-radius: 50%;
+                    margin-right: 4rpx;
+                }
+            }
+        }
+    }
+}

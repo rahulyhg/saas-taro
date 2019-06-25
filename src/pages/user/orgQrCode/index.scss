@@ -1,0 +1,28 @@
+.orgQrCode-wrap {
+    min-height: 100vh;
+    padding: 0 32px;
+    .title {
+        margin: 100px 48px 0 48px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .info {
+        font-size: 30px;
+        text-align: center;
+        padding: 64px 0;
+    }
+    .qrcode {
+        .icon {
+            font-size: 480px;
+            text-align: center;
+        }
+    }
+    .footer {
+        text-align: center;
+        Text {
+            color: #999999;
+            font-size: 30px;
+            padding: 0 32px;
+        }
+    }
+}

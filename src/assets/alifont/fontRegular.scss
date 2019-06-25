@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "fontRegular";
+    font-display: swap;
+    src: url("//at.alicdn.com/t/webfont_rqbw3vp70mn.eot"); /* IE9*/
+    src: url("//at.alicdn.com/t/webfont_rqbw3vp70mn.eot?#iefix")
+            format("embedded-opentype"),
+        /* IE6-IE8 */ url("//at.alicdn.com/t/webfont_rqbw3vp70mn.woff")
+            format("woff"),
+        /* chrome、firefox */ url("//at.alicdn.com/t/webfont_rqbw3vp70mn.ttf")
+            format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url("//at.alicdn.com/t/webfont_rqbw3vp70mn.svg#Alibaba-PuHuiTi-Regular")
+            format("svg"); /* iOS 4.1- */
+}
+
+.fontRegular {
+    font-family: "fontRegular" !important;
+}

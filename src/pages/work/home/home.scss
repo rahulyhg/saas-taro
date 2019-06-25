@@ -1,0 +1,392 @@
+.work {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.work-infoCard {
+    background-color: #fff;
+
+    .waitWork {
+        display: flex;
+        padding: 42rpx 42rpx 56rpx 42rpx;
+        background-size: 100% 100%;
+
+        
+        > view {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            line-height: 100rpx;
+            margin-left: 16rpx;
+            color: rgba(255, 255, 255, 1);
+            font-size: 32rpx;
+
+            > view {
+                flex: 1;
+            }
+
+            text {
+                font-size: 26rpx !important;
+                color:#F00;
+                border: 1px solid #efefef;
+                border-radius: 50%;
+                background-color:#efefef;
+                
+            }
+        }
+    }
+
+    .waitWork image {
+        width: 125px;
+        height: 120px;
+    }
+
+    .userCore {
+        position: relative;
+        bottom: 66rpx;
+        margin: 0 32rpx;
+        border-radius: 20rpx;
+        background-color: rgba(254, 254, 254, 1);
+        box-shadow: 0px 4px 15px 0px rgba(153, 153, 153, 0.24);
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 40rpx;
+            padding: 36rpx 0 0 0;
+            border-bottom: 1rpx solid #efefef;
+            align-items: center;
+
+            .link {
+                color: #999;
+                font-size: 28rpx;
+                padding: 0 0 20px 30rpx;
+            }
+            .title{
+                font-size: 32rpx;
+                padding-bottom: 20rpx;
+            }
+        }
+        .scoreCard {
+            display: flex;
+
+            .user,
+            .org {
+                flex: 1;
+                margin: 32rpx 32rpx;
+
+                > view {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .score {
+                        color: rgba(51, 51, 51, 1);
+                        font-size: 44rpx;
+                    }
+
+                    .rank {
+                        font-size: 24rpx;
+                        display: flex;
+                        align-items: flex-end;
+
+                        &.red {
+                            color: rgba(255, 77, 79, 1);
+                        }
+                        &.green {
+                            color: rgba(11, 160, 148, 1);
+                            font-size: 24rpx;
+                        }
+                    }
+                    
+                    .rank .icon-paiming {
+                        margin-right: 4rpx;
+                    }
+    
+                }
+
+                > text {
+                    color: rgba(153, 153, 153, 1);
+                    font-size: 24rpx;
+                }
+            }
+        }
+    }
+    
+}
+
+.toDoWork {
+    background-color: #fff;
+
+    > view {
+        margin: 0 32rpx;
+        padding: 32rpx 52rpx;
+        background-color: rgba(255, 250, 235, 1);
+        border-radius: 6rpx;
+    
+        .works {
+            .workItem {
+                margin-top: 16rpx;
+                font-size: 28rpx;
+            }
+        }
+    }
+}
+
+.partyWorks {
+    .gridItem {
+        margin-top: 48rpx;
+
+        .gridImg image {
+            width: 90rpx;
+            height: 90rpx;
+        }
+    }
+}
+.partyWorks.user {
+    padding: 0 0 40rpx 0;
+    .header{
+        padding-left: 30rpx;
+    }
+}
+.partyWorks.manager{
+    padding: 40rpx 0;
+    .header{
+        padding-left: 30px;
+    }
+}
+
+.eco {
+    padding: 40rpx 30rpx;
+}
+
+.partyWorks,
+.partyDay,
+.eco {
+    margin-bottom: 16rpx;
+    background-color: rgba(255, 255, 255, 1);
+    .title{
+        padding-bottom: 20rpx;
+    }
+    .header {
+        margin-bottom: 14rpx;
+        display:flex;
+        align-items: baseline;
+
+        .subHeader {
+            color: #999;
+            font-size: 24rpx;
+            margin-left: auto;
+        }
+    }
+}
+
+.toDoWork .header,
+.partyWorks .header,
+.partyDay .header,
+.eco .header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36rpx;
+    font-weight: 600;
+
+    .link {
+        color: #999;
+        font-size: 28rpx;
+    }
+}
+
+.partyDay {
+    margin: 16rpx 0;
+}
+
+.partyWorks {
+
+    .at-grid__flex {
+        .content-inner__img {
+            width: 90rpx;
+            height: 90rpx;
+        }
+
+        .content-inner__text {
+            font-size: 26rpx;
+            line-height: 32rpx;
+        }
+    }
+}
+
+.partyDay {
+    .userHeaderPicSwiper {
+        margin-top: 48rpx;
+        height: 200rpx;
+
+        .imgPartyDayUserHeader image {
+            width: 94rpx;
+            height: 94rpx;
+            border-radius:50%;
+        }
+        
+        .userSwiperItem {
+            text-align: center;
+            height: auto !important;
+
+            .patyDayUserName {
+                margin: 8rpx 0;
+                line-height: 28rpx;
+                color: rgba(51, 51, 51, 1);
+                font-size: 28rpx;
+            }
+        
+            .patyDayUserDay {
+                line-height: 28rpx;
+                color: rgba(204, 204, 204, 1);
+                font-size: 24rpx;
+            }
+        }
+    }
+}
+
+.eco {
+    .link {
+        font-size: 28rpx;
+        padding: 0 0 20rpx 30rpx;
+        color: #999;
+    }
+    .ecoText {
+        margin-top: 30rpx;
+    }
+
+    .ecoText,
+    .ecoVideo {
+        .ecoItem {
+            margin-bottom: 60rpx;
+        }
+    }
+
+    .ecoText {
+        .ecoItem {
+            display: flex;
+
+            .title {
+                color: rgba(51, 51, 51, 1);
+                font-size: 34rpx;
+                line-height: 48rpx;
+            }
+            .subTitle {
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                line-height: 40rpx;
+                margin: 10rpx 0;
+            }
+            .desc {
+                color: rgba(153, 153, 153, 1);
+                font-size: 24rpx;
+                line-height: 34rpx;
+
+                text {
+                    color: rgba(255, 77, 79, 1);
+                }
+            }
+        }
+    }
+
+    .ecoVideo {
+        margin-top: 18rpx;
+        display: flex;
+        flex-wrap: wrap;
+
+        .ecoItem {
+            flex: 1;
+            width: 50%;
+            min-width: 50%;
+            max-width: 50%;
+            box-sizing: border-box;
+
+            .ecoVideoImg {
+                position: relative;
+                width: 100%;
+                
+                .imgEcoVideoDesc {
+                    position: absolute;
+                    right: 16rpx;
+                    top: 140rpx;
+                    padding: 1rpx 11rpx;
+                    font-size: 22rpx;
+                    border-radius: 2rpx;
+                    background-color: rgba(153, 153, 153, 0.6);
+                    color: #fff;
+                }
+            }
+            .title {
+                color: rgba(51, 51, 51, 1);
+                font-size: 30rpx;
+                line-height: 42rpx;
+                padding-top: 10rpx;
+            }
+        }
+        .ecoPadL20{
+            padding-left: 15rpx;
+        }
+        .ecoPadR20{
+            padding-right: 15rpx;
+        }
+    }
+
+    .imgEcoText image {
+        width: 164rpx;
+        height: 230rpx;
+        margin-right: 40rpx;
+        background-color: #f4f4f4;
+    }
+
+    .imgEcoVideo image {
+        width: 100%;
+        height: 190rpx;
+        background-color: #f4f4f4;
+    }
+}
+
+.eco.learn {
+    .content {
+
+        .ecolearnImg image {
+            width: 100%;
+            height: 280rpx;
+            background-color: #f4f4f4;
+        }
+
+        .title {
+            font-size: 32rpx;
+            line-height: 44rpx;
+            padding-top: 10rpx;
+        }
+    }
+}
+
+.eco.book {
+    .content {
+        display: flex;
+
+        .ecoItem {
+            width: 33.3333%;
+        }
+
+        .ecoVideoImg image {
+            width: 100%;
+            height: 230rpx;
+            background-color: #f4f4f4;
+        }
+
+        .title {
+            font-size: 26rpx;
+            line-height: 36rpx;
+            padding-top: 10rpx;
+        }
+    }
+}
+.gridContent .gridText{
+    font-size: 26rpx !important;
+}
+.link:active{
+    opacity: 0.7;
+}

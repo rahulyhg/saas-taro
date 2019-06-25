@@ -1,0 +1,5 @@
+/functions/mock/**
+/scripts
+/config
+/node_modules
+/build

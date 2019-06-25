@@ -1,0 +1,47 @@
+
+.adLoading{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999;
+    .opacityCover{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.6;
+        z-index: 888888;
+    }
+    .loadingCover{
+        padding-top: 300px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 888889;
+        .loadImg{
+            display: block;
+            width: 175px;
+            height: 246px;
+            margin: 0 auto;
+        }
+        .show{
+            display: block;
+        }
+        .hide{
+            display: none;
+        }
+        .loading{
+            text-align: center;
+            color: #aaa;
+            font-size: 30px;
+            position: relative;
+            top: 30px;
+        }  
+    }
+}

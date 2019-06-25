@@ -1,0 +1,18 @@
+
+.nodata {
+    width: 100%;
+    text-align: center;
+
+    &-img {
+        width: 160rpx;
+        height: 165rpx;
+        margin-top: 200rpx;
+        opacity: 0.8;
+    }
+
+    &-notice {
+        font-size: 24rpx;
+        line-height: 2;
+        color: #999;
+    }
+}

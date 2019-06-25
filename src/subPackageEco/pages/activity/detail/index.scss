@@ -1,0 +1,130 @@
+@import 'src/assets/scss/userHeaderPicSwiper.scss';
+.signup-wrap {
+    width: 100%;
+    min-height: 100vh;
+    background: #eee;
+}
+
+.activityDetail {
+    background-color: rgba(245, 245, 245, 1);
+    .imgSwiper {
+        width: 100%
+    }
+    .header {
+        background-color: #fff;
+        >.title {
+            color: rgba(51, 51, 51, 1);
+            font-size: 42rpx;
+            line-height: 59px;
+            font-weight: bold;
+            padding: 32rpx;
+        }
+        >.subTitle {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(238, 238, 238, 1);
+            .name {
+                line-height: 30rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 28rpx;
+                margin: 0 0 44rpx 32rpx;
+            }
+            .time {
+                line-height: 30rpx;
+                color: rgba(153, 153, 153, 1);
+                font-size: 24rpx;
+                margin: 0 32rpx 44rpx 0;
+                text {
+                    color: rgba(255, 59, 48, 1);
+                    font-size: 28rpx;
+                    margin-right: 16rpx;
+                }
+            }
+        }
+        >.joinUsers {
+            padding: 32rpx;
+            .top {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                .title {
+                    font-weight: bold;
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 32rpx;
+                    text {
+                        margin-left: 16rpx;
+                        color: rgba(153, 153, 153, 1);
+                        font-size: 24rpx;
+                    }
+                }
+                .link {
+                    font-weight: bold;
+                    color: rgba(51, 51, 51, 1);
+                    font-size: 24rpx;
+                }
+            }
+            .userHeaderPicSwiper {
+                margin-top: 48rpx;
+            }
+        }
+    }
+    .body {
+        background-color: #fff;
+        margin-top: 16rpx;
+        padding: 32rpx;
+        .title {
+            margin-top: 20rpx;
+            margin-bottom: 48rpx;
+            color: rgba(51, 51, 51, 1);
+            font-size: 36rpx;
+            line-height: 48rpx;
+            font-weight: bold;
+        }
+        .time {
+            color: rgba(51, 51, 51, 1);
+            font-size: 34rpx;
+        }
+        .content {
+            padding: 32rpx 0;
+        }
+    }
+    .footer {
+        padding: 16rpx 32rpx;
+        background-color: #fff;
+        display: flex;
+        at-button {
+            flex: 1;
+            .at-button--secondary {
+                background-color: rgba(255, 77, 79, 0.12);
+            }
+            .last {
+                margin-left: 16rpx;
+            }
+        }
+    }
+    .scorllBack {
+        position: fixed;
+        z-index: 10;
+        bottom: 100rpx;
+        right: 32rpx;
+        width: 64rpx;
+        height: 64rpx;
+        border: 50%;
+    }
+    .at-row--wrap {
+        padding: 32px 0;
+        .at-col {
+            text-align: center;
+            .user-name {
+                font-size: 26px;
+                padding-top: 8px;
+                overflow: hidden;
+            }
+        }
+        image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+    }
+}

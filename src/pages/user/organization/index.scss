@@ -1,0 +1,326 @@
+.org-tree-container {
+    display: inline-block;
+    padding: 30px;
+    background-color: #fff;
+    font-size: 28px;
+}
+
+.org-tree {
+    display: table;
+    text-align: center;
+}
+
+.org-tree:after,
+.org-tree:before {
+    content: "";
+    display: table;
+}
+
+.org-tree:after {
+    clear: both;
+}
+
+.org-tree-node,
+.org-tree-node-children {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.org-tree-node-children:after,
+.org-tree-node-children:before,
+.org-tree-node:after,
+.org-tree-node:before {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.org-tree-node-label {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+    width: 96px;
+}
+
+.org-tree-node-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.org-tree-node-label .org-tree-node-label-inner {
+    text-align: center;
+}
+
+.org-tree-node-label-inner .org-tree-node-name {
+    padding: 20px 30px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 2px 10px #FF4D4F;
+    box-shadow: 0 2px 10px #FF4D4F;
+}
+
+.org-tree-button-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 10;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.org-tree-button-wrapper>view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.org-tree-button-wrapper .org-tree-node-btn {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    -webkit-transform: translate(-50%, 9px);
+    transform: translate(-50%, 9px);
+}
+
+.org-tree-button-wrapper .org-tree-node-btn:hover {
+    background-color: #e7e8e9;
+    -webkit-transform: translate(-50%, 9px) scale(1.15);
+    transform: translate(-50%, 9px) scale(1.15);
+}
+
+.org-tree-button-wrapper .org-tree-node-btn:after,
+.org-tree-button-wrapper .org-tree-node-btn:before {
+    content: "";
+    position: absolute;
+}
+
+.org-tree-button-wrapper .org-tree-node-btn:before {
+    top: 50%;
+    left: 8px;
+    right: 8px;
+    height: 0;
+    border-top: 1px solid #ccc;
+}
+
+.org-tree-button-wrapper .org-tree-node-btn:after {
+    top: 8px;
+    left: 50%;
+    bottom: 8px;
+    width: 0;
+    border-left: 2px solid #ccc;
+}
+
+.org-tree-button-wrapper .org-tree-node-btn.expanded:after {
+    border: none;
+}
+
+.org-tree-node {
+    padding-top: 40px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.org-tree-node.collapsed,
+.org-tree-node.is-leaf {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.org-tree-node:after,
+.org-tree-node:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 38px;
+}
+
+.org-tree-node:after {
+    left: 50%;
+    border-left: 4px solid #FE4D4D;
+}
+
+.org-tree-node:not(:first-child):before,
+.org-tree-node:not(:last-child):after {
+    border-top: 4px solid #FE4D4D;
+}
+
+.collapsable .org-tree-node.collapsed {
+    padding-bottom: 60px;
+}
+
+.collapsable .org-tree-node.collapsed .org-tree-node-label:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50%;
+    height: 40px;
+    border-right: 1px solid #ddd;
+}
+
+.org-tree>.org-tree-node {
+    padding-top: 0;
+}
+
+.org-tree>.org-tree-node:after {
+    border-left: 0;
+}
+
+.org-tree-node-children {
+    padding-top: 40px;
+    display: table;
+    margin-top: 12px;
+}
+
+.org-tree-node-children:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 40px;
+    border-left: 2px solid #FE4D4D;
+}
+
+.org-tree-node-children:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.horizontal .org-tree-node {
+    display: table-cell;
+    float: none;
+    padding-top: 0;
+    padding-left: 40px;
+}
+
+.horizontal .org-tree-node-label .org-tree-node-label-icon {
+    margin-top: -96px;
+    padding: 0;
+}
+
+.horizontal .org-tree-node-label {
+    width: auto;
+    min-width: 200px;
+}
+
+.horizontal .org-tree-node.collapsed,
+.horizontal .org-tree-node.is-leaf {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.horizontal .org-tree-node:after,
+.horizontal .org-tree-node:before {
+    width: 38px;
+    height: 50%;
+}
+
+.horizontal .org-tree-node:after {
+    top: 50%;
+    left: 0;
+    border-left: 0;
+}
+
+.horizontal .org-tree-node:only-child:before {
+    top: 2px;
+    border-bottom: 2px solid #ddd;
+}
+
+.horizontal .org-tree-node:not(:first-child):before,
+.horizontal .org-tree-node:not(:last-child):after {
+    border-top: 0;
+    border-left: 4px solid #FE4D4D;
+}
+
+.horizontal .org-tree-node:not(:only-child):after {
+    border-top: 4px solid #FE4D4D;
+}
+
+.horizontal .org-tree-node .org-tree-node-inner {
+    display: table;
+}
+
+.horizontal .org-tree-node-label {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 12px;
+}
+
+.horizontal.collapsable .org-tree-node.collapsed {
+    padding-right: 60px;
+}
+
+.horizontal.collapsable .org-tree-node.collapsed .org-tree-node-label:after {
+    top: 0;
+    left: 100%;
+    width: 40px;
+    height: 50%;
+    border-right: 0;
+    border-bottom: 0.625em solid #ddd;
+}
+
+.horizontal .org-tree-button-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 0;
+    height: 0;
+    z-index: 10;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal .org-tree-button-wrapper>view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.horizontal .org-tree-button-wrapper .org-tree-node-btn {
+    display: inline-block;
+    -webkit-transform: translate(18PX, -50%);
+    transform: translate(18PX, -50%);
+}
+
+.horizontal>.org-tree-node:only-child:before {
+    border-bottom: 0;
+}
+
+.horizontal .org-tree-node-children {
+    display: table-cell;
+    padding-top: 0;
+    padding-left: 40px;
+}
+
+.horizontal .org-tree-node-children:before {
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 0;
+    border-left: 0;
+    border-top: 4px solid #FE4D4D;
+}
+
+.horizontal .org-tree-node-children:after {
+    display: none;
+}
+
+.horizontal .org-tree-node-children>.org-tree-node {
+    display: block;
+}

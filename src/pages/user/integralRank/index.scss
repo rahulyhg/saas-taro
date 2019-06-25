@@ -1,0 +1,191 @@
+.integralRank-wrap {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ff5658;
+    background-image: url('http://saas-2-min-pro.oss-cn-hangzhou.aliyuncs.com/images/user/record_bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    .wrap {
+        height: calc(100vh - 86rpx);
+    }
+    .head {
+        //background-image: url('http://saas-2-min-pro.oss-cn-hangzhou.aliyuncs.com/images/user/rank.png');
+        background-color: #ff7273;
+        color: #fff;
+        padding: 24px 48px;
+        align-items: center;
+        font-size: 28px;
+        margin-bottom: 36px;
+        .at-icon {
+            vertical-align: middle
+        }
+        .at-icon {
+            vertical-align: middle
+        }
+        .head-left {
+            text-align: left;
+            position: relative;
+            Text {
+                padding-right: 8px;
+            }
+            .icon {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+        .head-right {
+            text-align: right;
+            .icon {
+                padding: 0 8px;
+            }
+        }
+        .active {
+            opacity: .5;
+        }
+    }
+    .at-tabs__header {
+        background: #ff5658;
+        color: #fff !important;
+        .at-tabs__item {
+            color: #fff !important;
+        }
+        .at-tabs__item--active {
+            color: #fff !important;
+        }
+        .at-tabs__item-underline {
+            width: 40%;
+            height: 2PX;
+            margin-left: 30%;
+            background-color: #fff !important;
+        }
+    }
+    .panel {
+        margin-bottom: 60px;
+        .list {
+            padding: 12px 0;
+            background: #fff;
+            margin: 24px 32px;
+            box-shadow: 0px -8px 2px -3px rgba(194, 9, 9, 0.5);
+            border-radius: 8px;
+            margin-top: 100px;
+            .list-head {
+                padding: 24px 0;
+                .rank-photo {
+                    .at-col {
+                        margin: 0 auto;
+                        text-align: center;
+                        position: relative;
+                    }
+                    image {
+                        width: 124px;
+                        height: 124px;
+                        border-radius: 50%;
+                    }
+                    .rank-icon {
+                        width: 62px;
+                        height: 62px;
+                        position: absolute;
+                        bottom: 0px;
+                        right: 40px;
+                    }
+                    .first {
+                        background-image: url('http://saas-2-min-pro.oss-cn-hangzhou.aliyuncs.com/images/user/photo_bg.png');
+                        background-size: 100% auto;
+                        background-repeat: no-repeat;
+                        margin-top: -92px;
+                        image {
+                            margin-top: 28px;
+                            width: 154px;
+                            height: 154px;
+                        }
+                        .rank-icon {
+                            width: 62px;
+                            height: 62px;
+                            position: absolute;
+                            bottom: 32px;
+                            right: 32px;
+                        }
+                    }
+                }
+                .rank-user__name {
+                    font-size: 32px;
+                    text-align: center;
+                    padding-top: 8px;
+                }
+                .rank-org__name {
+                    font-size: 24px;
+                    text-align: center;
+                    padding-top: 8px;
+                }
+                .rank-scroe {
+                    font-size: 40px;
+                    text-align: center;
+                    padding-top: 24px;
+                }
+            }
+            .list-item {
+                padding: 12px 32px;
+                .at-row {
+                    align-items: center;
+                    padding: 24px 0;
+                    .user-name {
+                        font-size: 32px;
+                    }
+                    .org-name {
+                        font-size: 26px;
+                        color: #999;
+                        padding-top: 8px;
+                    }
+                    image {
+                        width: 94px;
+                        height: 94px;
+                        border-radius: 50%;
+                        margin: 0 32px;
+                    }
+                    .rank {
+                        font-size: 34px;
+                    }
+                    .at-col {
+                        text-align: right;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0 32px;
+        box-shadow: 0px 2px 10px 0px rgba(255, 208, 208, 0.63);
+        background: #fff;
+        .at-row {
+            align-items: center;
+            padding: 24px 0;
+            .user-name {
+                font-size: 32px;
+            }
+            .org-name {
+                color: #999;
+                font-size: 26px;
+                padding-top: 8px;
+            }
+            image {
+                width: 94px;
+                height: 94px;
+                border-radius: 50%;
+                margin: 0 32px;
+            }
+            .rank {
+                font-size: 28px;
+            }
+            .at-col {
+                text-align: right;
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -16,9 +16,12 @@ if (!dirName) {
 }
 
 //页面模板
-const indexTep = `import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
+const indexTep = `
+// eslint-disable-next-line
+import Taro, { Component } from '@tarojs/taro'
+// eslint-disable-next-line
 import { ${capPirName}Props, ${capPirName}State } from './${dirName}.interface'
+import { View } from '@tarojs/components'
 import './${dirName}.scss'
 
 class ${capPirName} extends Component<${capPirName}Props,${capPirName}State > {

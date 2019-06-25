@@ -1,0 +1,233 @@
+.rewardsPunishmentsList {
+    .float-btn {
+        width: 108rpx;
+        height: 108rpx;
+        background-color: #FF574F;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 24rpx;
+        text-align: center;
+
+        position: fixed;
+        bottom: 80rpx;
+        right: 32rpx;
+        z-index: 20;
+
+        .text {
+            margin-top: 20rpx;
+        }
+
+        .icon {
+            width: 108rpx;
+            height: 108rpx;
+        }
+    }
+
+    .tabTool {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        width: 25%;
+        height: 86rpx;
+        background-color: white;
+        border-bottom: 1px solid #efefef;
+
+        > view {
+            margin: 28rpx 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid #efefef;
+
+            .text {
+                font-size: 26rpx;
+                color: #999999;
+                margin-right: 16rpx;
+            }
+            image {
+                width: 24rpx;
+                height: 16rpx;
+            }
+        }
+
+    }
+
+    .searchTool {
+        position: fixed;
+        top: 88rpx;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow-y:auto;
+
+        > view {
+            padding: 36rpx 18rpx;
+            background: #fff;
+            
+            .searchItem {
+                margin-bottom: 24rpx;
+
+                .title {
+                    padding: 0 16rpx 16rpx 16rpx;
+                }
+
+                .formItems {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .formItem {
+                        width: 50%;
+                        position: relative;
+
+                        > view {
+                            display:flex;
+                            justify-content:center;
+                            align-items:center;
+                            margin: 12rpx 16rpx;
+                            height: 72px;
+                            border-radius: 4px;
+                            background-color: rgba(245, 245, 245, 1);
+                            color: rgba(51, 51, 51, 1);
+                            font-size: 28px;
+                            position: static;
+                        }
+
+                        > image {
+                            display: none;
+                        }
+                    }
+
+                    .formItem.checked {
+                        > view {
+                            background-color: rgba(255, 77, 79, 0.1);
+                        }
+
+                        > image {
+                            display: inline-block;
+                            position: absolute;
+                            right: 16rpx;
+                            bottom: 16rpx;
+                            width: 40rpx;
+                            height: 30rpx;
+                        }
+                    }
+
+                    .formItem.w25 {
+                        width: 25%;
+                    }
+                }
+            }
+
+            .btnTool {
+                display: flex;
+
+                .reset {
+                    margin-right: 24rpx;
+                }
+
+                .at-button,
+                at-button {
+                    flex: 1;
+                    height: 72rpx;
+                    line-height: 70rpx;
+
+                    > view,
+                    button {
+                        height: 72rpx;
+                        line-height: 70rpx;
+                        font-size: 28rpx;
+                        padding:0 28rpx;
+                    }
+                }
+            }
+        }
+    }
+
+    .at-tabs {
+        .at-tabs__header {
+            position: fixed;
+            top: 0;
+            z-index: 2;
+            width: 75% !important;
+            height: 88rpx;
+            border-bottom: 1px solid #efefef;
+
+            .at-tabs__item {
+                width: 35%;
+            }
+        }
+
+        .at-tabs__item {
+            padding: 24rpx 24rpx 22rpx 24rpx;
+        }
+
+        .tabNBSP {
+            height: 88rpx;
+        }
+
+        .tab1,
+        .tab2 {
+            height: calc(100vh - 100rpx);
+        }
+
+        .tab1 {
+            margin: 0;
+            padding: 0;
+
+            .djListView {
+                padding: 32rpx 16rpx;
+                display: flex;
+                flex-wrap: wrap;
+
+                .viewItem {
+                    width: 50%;
+                    margin-bottom: 52rpx;
+
+                    > view {
+                        padding: 0 16rpx;
+
+                        image {
+                            width: 100%;
+                            height: 250rpx;
+                            margin-bottom: 16rpx;
+                        }
+
+                        view {
+                            color: rgba(51, 51, 51, 1);
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tab2 {
+            .djListView {
+                padding: 32rpx;
+    
+                .viewItem {
+                    width: 100%;
+                    margin-bottom: 52rpx;
+    
+                    > view {
+    
+                        image {
+                            width: 100%;
+                            height: 390rpx;
+                            margin-bottom: 16rpx;
+                        }
+    
+                        view {
+                            color: rgba(51, 51, 51, 1);
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
